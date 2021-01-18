@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="205dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:text="send sms"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="191dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="49dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:onClick="sendsms"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMessage" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="phone number"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="224dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:editable="true"
+        android:ems="10"
+        android:hint="message"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
